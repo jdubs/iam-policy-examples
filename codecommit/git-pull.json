@@ -1,0 +1,13 @@
+# Git pull from a specified account/git-repo
+{
+    "Statement": [
+        {
+            "Action": [
+                "codecommit:GitPull"
+            ],
+            "Effect": "Allow",
+            "Resource" : "arn:aws:codecommit:us-east-1:AWS_ACCOUNT_ID:super-git-repo"
+        }
+    ]
+}
+

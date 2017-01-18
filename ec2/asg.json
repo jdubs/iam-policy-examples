@@ -1,0 +1,15 @@
+# Describe autoscale groups and the instsances in that group.
+# Describe needs * as it can not be isolated by resource id
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:DescribeAutoScalingInstances",
+                "autoscaling:DescribeAutoScalingGroups"
+            ],
+            "Resource": "*",
+        }
+    ]
+}
