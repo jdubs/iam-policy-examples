@@ -7,18 +7,17 @@
                 "s3:ListBucket"
             ],
             "Resource": [
-                "arn:aws:s3:::s3-super-bucket"
+                "arn:aws:s3:::ha-playground-interview"
             ]
         },
         {
             "Effect": "Allow",
             "Action": [
-                "s3:GetObject",
+                "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::s3-super-bucket/*"
+                "arn:aws:s3:::ha-playground-interview/*"
             ]
         }
     ]
 }
-

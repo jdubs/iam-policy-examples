@@ -1,0 +1,22 @@
+{
+    "Version": "2008-10-17",
+    "Id": "Policy1335892530063",
+    "Statement": [
+        {
+            "Sid": "Example permissions",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::ACCOUNT_ID:root"
+            },
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListBucket",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::SUPER_BUCKET",
+                "arn:aws:s3:::SUPER_BUCKET/*"
+            ]
+        }
+    ]
+}
